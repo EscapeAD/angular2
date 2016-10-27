@@ -3,6 +3,10 @@ const express = require('express'),
 
 
 
-app.get("/", function(res,req){
+app.get("/", function(req,res){
   res.send("testing");
-})
+});
+
+app.listen(3000, function(){
+    console.log("Server Started");
+});
